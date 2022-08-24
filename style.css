@@ -16,6 +16,108 @@
 .fab {
     color: #000000;
 }
+
+
+/* hero background image */
+.bgimage {
+    height:100vh;
+    /* background: url('images/quynh.jpg'); */
+    /* background-size:cover; */
+    /* background-color: #5bf2b6; */
+    background: linear-gradient(to right, rgba(235, 187, 167, 1), rgba(207, 199, 248, 1));
+
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* experience section css */
+
+    .main-timeline-5 {
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
+    }
+
+    .main-timeline-5::after {
+    content:'';
+    position: absolute;
+    width: 3px;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    margin-left: -3px;
+    }
+
+    /* container around content */
+    .timeline-5 {
+        position: relative;
+        background-color: inherit;
+        width: 100%;
+    }
+
+    /* the circles on the timeline */
+    .timeline-5::after{
+        content: '';
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        right: 1px;
+        background-color: #fff;
+        top: 18px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    /* place the container to the right */
+    .right-5{
+        padding: 0px 0px 20px 40px;
+        left: auto;
+    }
+
+    /* add arrows to the right container (pointing left) */
+    .right-5::before{
+        content: '';
+        position: absolute;
+        top: 18px;
+        z-index: 1;
+        left: 30px;
+        border: medium solid #fff;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+
+    /* fix the circle for containers on the right side */
+    .right-5::after{
+        left: -10px;
+    }
+
+    @media (max-width:991px){
+        .main-timeline-5 {
+            max-width: 100%;
+        }
+    }
+    .gradient-custom-5{
+        background: #ebbba7;
+        background:  -webkit-linear-gradient(to right, rgba(235, 187, 167,1), rbga(207, 199, 248, 1));
+        background: linear-gradient(to right, rgba(235, 187, 167, 1), rgba(207, 199, 248, 1));
+    }
+    
+
 /* footer styling */
 #footer {
     background-color: lightblue;

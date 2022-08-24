@@ -4,66 +4,194 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='style.css' rel='stylesheet' type="text/css">
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    
+    <link href='style.css' rel='stylesheet' type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <title>Quynh's Portfolio</title>
 </head>
 <body>
     <!-- <h1>Quynh Nguyen</h1> -->
      <!--navbar-->
-     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
           <!-- <a class="navbar-brand" href="#">Portfolio</a> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="#about">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Experience</a>
+                <a class="nav-link" href="#experience">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
           </div>
         </div>
       </nav>
     <!-- end navbar-->
 
-    <!--banner-->
-    <section class="'bgimahe" id="begin">
+    <!--home banner-->
+    <section class="bgimage" id="home">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <h2 class ="hero_title">Quynh Nguyen</h2>
+            <h2 class="hero_title">Quynh Nguyen</h2>
+            <p class="hero_desc">Web Developer</p>
+            <div class="social-icons">
+              <a href="https://github.com/quynhng336" target="_blank"><i class = "fa fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/quynh-nguyen-607a9b1b5/" target="_blank"><i class="fa fa-linkedin"></i></a> 
+            </div>
           </div>
         </div>
       </div>
     </section>
-  
-  <!-- footer-->
-  <footer id="footer">
-      <div class ="container-fluid">
-        <div class="social-icons">
-          <a href="https://github.com/quynhng336" target="_blank"><i class = "fa fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/quynh-nguyen-607a9b1b5/" target="_blank"><i class="fa fa-linkedin"></i></a> 
+    <!--end home banner-->
+
+
+    <!-- about section-->
+    <section id="about">
+      <div class="container mt-4 pt-4">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="fw-bold text-center">About Me</h1>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="images/quynh.jpg" alt="quynh's image" height="180">
+          </div>
+          <div class="col-md-7">
+            <p>Hello there! My name is Quynh Nguyen, a Full Stack Developer based in California. I have a strong interest in tech and find programming fun and interesting. 
+              I have strong time management, communication, problem-solving skills. I'm self-motivated and really enjoy collaborating with others.
+            </p>
+          </div>
         </div>
       </div>
-  </footer>
+    </section>
+    <!-- end about section -->
+    
+    <!-- experience section-->
+    <section id="experience">
+      <div class="container mt-4 pt-4">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="fw-bold text-center">Experience</h1>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gradient-custom-5">
+      <div class="container py-5">
+        <div class="main-timeline-5">
+          <div class="timeline-5 right-5">
+            <div class="card">
+              <div class="card-body p-4">
+                <h2 class="h5">Name of experience 1</h2>
+                <span class ="small text-muted"><i class=fa fa-clock-o me-1>date</i></span>
+                <p class="mt-2 mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quae, dolorum numquam officia assumenda odio voluptatum quam optio mollitia fugiat, tempore dolorem error quisquam! Excepturi harum dolore nulla provident repudiandae!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-timeline-5">
+          <div class="timeline-5 right-5">
+            <div class="card">
+              <div class="card-body p-4">
+                <h2 class="h5">Name of experience 2</h2>
+                <span class ="small text-muted"><i class=fa fa-clock-o me-1>date</i></span>
+                <p class="mt-2 mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quae, dolorum numquam officia assumenda odio voluptatum quam optio mollitia fugiat, tempore dolorem error quisquam! Excepturi harum dolore nulla provident repudiandae!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end experience section -->
+
+    <!-- skills section -->
+    <section id="skills">
+      <div class="container mt-4 pt-4">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="fw-bold text-center">Skills</h1>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <div class="alert alert-success text-center" role="alert">
+              SQL
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="alert alert-success text-center" role="alert">
+              Java
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="alert alert-success text-center" role="alert">
+              JavaScript
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="alert alert-success text-center" role="alert">
+              HTML
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="alert alert-success text-center" role="alert">
+              CSS
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="alert alert-success text-center" role="alert">
+              Git
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+    </section>
+    <!-- end skills section -->
+
+    <!-- projects section -->
+    <section id="projects">
+      <div class="container mt-4 pt-4">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="fw-bold text-center">Projects</h1>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+  <!-- footer-->
+  <!-- <footer id="footer">
+      
+  </footer> -->
   <!-- end footer -->
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> 
 </body>
+
 </html>
